@@ -8,12 +8,14 @@ class List extends Component {
     super();
 
     this.state = {
-      data = [];
+      data: []
     }
   }
 
   componentDidMount() {
     const items = [];
+    const faker = window.faker;
+
     for (let i = 0; i < 12; i++) {
       const item = {
         lat: faker.address.latitude(),
@@ -32,8 +34,8 @@ class List extends Component {
   }
 
   render() {
-    const items = this.state.data.map(item => {
-      return <Item item={item} />;
+    const items = this.state.data.map((item, index) => {
+      return <Item key={index} item={item} />;
     });
 
     return(

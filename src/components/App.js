@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import List from './List';
+import Map from './Map';
 
 import '../css/App.css';
 

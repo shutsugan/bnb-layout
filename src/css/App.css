@@ -6,6 +6,6 @@
 @media only screen and (min-width: 1100px) {
   .App {
     display: grid;
-		grid-template-columns: 7fr 4fr;
+		grid-template-columns: 7fr 5fr;
   }
 }
