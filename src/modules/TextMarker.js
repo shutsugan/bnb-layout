@@ -9,6 +9,9 @@ class TextMarker extends window.google.maps.OverlayView {
         this.enableCallbacks = [];
     }
 
+    /**
+  	 * Add marker to attach in map.
+  	*/
     onAdd () {
         this.div = document.createElement('div');
         this.div.classList.add('marker');
@@ -36,10 +39,16 @@ class TextMarker extends window.google.maps.OverlayView {
         this.div.parentNode.removeChild(this.div);
     }
 
+    /**
+  	 * highlight the marker when hovering over the item.
+  	*/
     activate() {
       if (this.div !== null) this.div.classList.add('is-active');
     }
 
+    /**
+  	 * remove highlight from prev highlighted marker.
+  	*/
     deactivate() {
       if (this.div !== null) this.div.classList.remove('is-active');
     }
@@ -54,6 +63,10 @@ class TextMarker extends window.google.maps.OverlayView {
       if (this.div !== null) this.div.innerHTML = this.text;
     }
 
+    /**
+  	 * set the content of the marker to reflect the item's.
+     * @param {HTMLElement} html item text content
+  	*/
     setContent(html) {
       this.html = html;
     }

@@ -6,6 +6,7 @@ class GoogleMap {
 		this._bounds = null;
 		this._marker = null;
 	}
+  
 	/**
 	 * Load the card in the element
 	 * @param {HTMLElement} element
