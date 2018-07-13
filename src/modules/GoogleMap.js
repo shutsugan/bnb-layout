@@ -12,7 +12,7 @@ class GoogleMap {
 	 * @return {TextMarker} the marker
 	*/
 	async load(element) {
-		this._map = new window.google.maps.Map(element);
+		this._map = new window.google.maps.Map(element, {zoom: 1});
     this._bounds = new window.google.maps.LatLngBounds()
     this._marker = TextMarker;
 
