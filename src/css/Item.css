@@ -14,6 +14,25 @@
 	height: auto;
 }
 
-.Item__title, .Item__info {
-	margin: 0px;
+.Item__title {
+  word-wrap: break-word !important;
+  font-size: 16px !important;
+  line-height: 22px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: rgb(72, 72, 72) !important;
+  font-weight: 800 !important;
+	margin: 0px !important;
+}
+
+.Item__info {
+  word-wrap: break-word !important;
+  font-size: 14px !important;
+  line-height: 18px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: rgb(72, 72, 72) !important;
+  font-weight: normal !important;
+  display: inline !important;
+  margin: 0px !important;
 }

@@ -39,6 +39,40 @@
 	z-index: 1000;
 }
 
+.marker.is-poped {
+  width: auto;
+  width: 260px;
+  padding: 0;
+  z-index: 10000;
+  animation: .2s ease-in popin;
+}
+
+.marker h4 {
+  word-wrap: break-word !important;
+  font-size: 16px !important;
+  line-height: 22px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: rgb(72, 72, 72) !important;
+  font-weight: 800 !important;
+}
+
+.marker p {
+  word-wrap: break-word !important;
+  font-size: 14px !important;
+  line-height: 25px !important;
+  letter-spacing: normal !important;
+  font-family: Circular, -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", sans-serif !important;
+  color: rgb(72, 72, 72) !important;
+  font-weight: normal !important;
+  padding: 4px;
+}
+
 .marker.is-active::after {
 	border-top-color: #5069FF;
+}
+
+@keyframes popin {
+  from { opacity: 0; }
+  to   { opacity: 1; }
 }

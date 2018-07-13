@@ -21,6 +21,7 @@ class TextMarker extends window.google.maps.OverlayView {
           event.stopPropagation();
 
           this.div.innerHTML = this.html;
+          this.div.classList.add('is-poped');
           this.active();
         });
     }
@@ -49,6 +50,7 @@ class TextMarker extends window.google.maps.OverlayView {
     }
 
     deactive() {
+      this.div.classList.remove('is-poped');
       if (this.div !== null) this.div.innerHTML = this.text;
     }
 
